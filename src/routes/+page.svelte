@@ -1,5 +1,5 @@
 <script>
-	// import { user } from '$lib/stores/auth.js';
+	let { data } = $props();
 </script>
 
 <div
@@ -31,5 +31,15 @@
 			Comenzar
 		</a>
 		<!-- {/if} -->
+
+		<ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+			{#each data.instruments as instrument}
+				<li
+					class="transform cursor-pointer rounded-lg bg-gray-800/50 p-4 font-semibold text-gray-200 transition-colors duration-200 hover:text-purple-400 hover:bg-gray-700/50"
+				>
+					{instrument.name}
+				</li>
+			{/each}
+		</ul>
 	</div>
 </div>
