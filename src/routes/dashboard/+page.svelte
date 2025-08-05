@@ -33,10 +33,9 @@
 		>
 			Cerrar Sesión
 		</button>
-	</div>
 
-	<div class="w-full max-w-lg space-y-8 rounded-xl bg-gray-800/50 p-10 shadow-xl backdrop-blur-sm">
-		<h1 class="text-4xl font-extrabold text-white sm:text-5xl">Notas!</h1>
+		<h2 class="text-4xl font-extrabold text-white sm:text-5xl">Notas!</h2>
+
 		<ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
 			{#each notes as note}
 				<li
@@ -50,7 +49,7 @@
 		<form onsubmit={handleSubmit}>
 			<label>
 				Add a note
-				<input name="note" type="text" />
+				<input name="note" type="text" class="text-zinc-900" />
 			</label>
 		</form>
 	</div>
