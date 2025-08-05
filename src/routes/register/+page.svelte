@@ -9,7 +9,7 @@
 				>
 			</p>
 		</div>
-		<form class="space-y-6">
+		<form class="space-y-6" method="POST" action="?/signup">
 			<div>
 				<label for="email" class="mb-2 block text-sm font-medium text-gray-300"
 					>Correo Electrónico</label
