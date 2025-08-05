@@ -10,6 +10,13 @@
 	};
 </script>
 
+<header>
+	<nav>
+		<a href="/">Home</a>
+	</nav>
+	<button onclick={logout}>Logout</button>
+</header>
+
 <main>
 	{@render children()}
 </main>
